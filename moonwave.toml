@@ -1,0 +1,27 @@
+title = "Fusionfire"
+gitRepoUrl = "https://github.com/emozley/westminster"
+
+gitSourceBranch = "master"
+changelog = true
+classOrder = []
+
+[docusaurus]
+onBrokenLinks = "throw"
+onBrokenMarkdownLinks = "warn"
+favicon = ""
+
+organizationName = "ewanophobia"
+projectName = "fusionfire"
+url = "https://ewanophobia.github.io"
+baseUrl = "/Fusionfire"
+tagline = "Fusionfire Documentation"
+
+[navbar]
+hideableSidebar = true
+
+[footer]
+style = "dark"
+
+[footer.links]
+title = ""
+copyright = "Copyright © 2021 E. S. Manovski-Bull Built with Moonwave and Docusaurus"
