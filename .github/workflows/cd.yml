@@ -26,4 +26,4 @@ jobs:
       run: foreman install
 
     - name: Deploy
-      run: mantle deploy
+      run: mantle deploy .\mantle.yml
