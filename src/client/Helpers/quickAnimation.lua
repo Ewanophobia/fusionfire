@@ -1,3 +1,5 @@
+--!strict
+
 local function quickAnimation(Player: Player, AnimationID: string)
 	local Character = Player.Character or Player.CharacterAdded:Wait()
 	local Humanoid = Character:WaitForChild("Animator")

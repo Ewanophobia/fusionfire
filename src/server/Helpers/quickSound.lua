@@ -1,7 +1,5 @@
 --!strict
 
-local ReplicatedStorage = game:GetService("ReplicatedStorage")
-
 local function quickSound(audioId: number, volume: number?, parent: Instance?)
 	local sound = Instance.new("Sound")
 	sound.SoundId = "rbxassetid://" .. audioId

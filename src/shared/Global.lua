@@ -1,7 +1,7 @@
 local RunService = game:GetService("RunService")
 
 local makeEnum = require(script.Parent.makeEnum)
-local quickAnimation = require(script.Parent.quickAnimation)
+local quickAnimation = require(script.Parent.Util.quickAnimation)
 
 local Global = {}
 
@@ -38,6 +38,27 @@ Global.ANIMATIONS = {
 	PISTOL_HOLD = quickAnimation("rbxassetid://8358450816"),
 
 	FRONT_FLIP = quickAnimation("rbxassetid://8367284453"),
+}
+
+Global.ANIMATION_IDS = {
+	RIFLE_RELOAD = "rbxassetid://8358458823",
+	RIFLE_SHOOT = "rbxassetid://8358457133",
+	RIFLE_HOLD = "rbxassetid://8358456004",
+
+	PISTOL_RELOAD = "rbxassetid://8358453975",
+	PISTOL_SHOOT = "rbxassetid://8358479573",
+	PISTOL_HOLD = "rbxassetid://8358450816",
+
+	FRONT_FLIP = "rbxassetid://8367284453",
+
+	IDLE = "rbxassetid://8373800632",
+	WALK = "rbxassetid://8364296206",
+	RUN = "rbxassetid://8366502347",
+	JUMP = "rbxassetid://8364498210",
+	FALL = "rbxassetid://8364737058",
+	CLIMB = "rbxassetid://8364813214",
+	SIT = "rbxassetid://8364846212",
+	TOOL_NONE = "rbxassetid://507768375",
 }
 
 -------------

@@ -1,0 +1,39 @@
+environments:
+  - name: staging
+    branches: [dev, dev/*, ewan]
+    overrides:
+      places:
+        start:
+          configuration:
+            name: Staging - Fusionfire
+  - name: production
+    branches: [main]
+    overrides:
+      experience:
+        configuration:
+          playability: public
+
+target:
+  experience:
+    configuration:
+      genre: combat
+      playableDevices: [computer]
+      playability: private
+      privateServerPrice: 0
+      enableStudioAccessToApis: true
+      #icon:
+      #thumbnails:
+       # - marketing/game-thumbnail-fall-update.png
+        #- marketing/game-thumbnail-default.png
+    places:
+      start:
+        file: game.rbxlx
+        configuration:
+          name: Fusionfire
+          description: |-
+            Battle it out in waves of zombies or deathmatches!
+            Lay down a fresh beat as you kill enemy upon enemy.
+
+            First update: release
+          maxPlayerCount: 10
+          serverFill: robloxOptimized

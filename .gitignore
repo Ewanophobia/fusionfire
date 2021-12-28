@@ -210,3 +210,6 @@ DevPackages
 
 ### Moonwave ###
 build/
+
+# Mantle
+*.bash

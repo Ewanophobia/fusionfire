@@ -1,3 +1,5 @@
+--!strict
+
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local Players = game:GetService("Players")
 
@@ -11,15 +13,9 @@ local RigService = Knit.CreateService {
 local Assets = Knit.Assets
 local Library = Knit.Library
 
-local t = require(Library.t)
-
 local Rig = Assets:WaitForChild("Rig")
 
-function RigService:KnitInit()
-
-end
-
-function RigService:ApplyRig(player)
+function RigService:ApplyRig(player: Player)
 	local Character = player.Character or player.CharacterAdded:Wait()
 	local Humanoid = Character:WaitForChild("Humanoid")
 
